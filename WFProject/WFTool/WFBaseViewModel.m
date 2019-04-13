@@ -20,29 +20,31 @@
 - (void)reloadModelDataSucces:(WFBaseViewModelRequestSuccesBlock)completionBlock fail:(WFNetWorkingRequestFailBlock)failureBlock{
     __weak typeof(self) weakSelf = self;
     WFNetworkingRequestParam *param = [self requestParam];
-    [[WFNetWorkingRequest shareInstance]fetchNetWorkingDataWithParam:param susses:^(NSDictionary * _Nonnull responeData) {
+    [[WFNetWorkingRequest shareInstance]fetchNetWorkingDataWithParam:param susses:^(id  _Nonnull responeData) {
+        
         @synchronized (weakSelf) {
             //解析处理数据
-            NSArray *dataArray = [responeData objectForKey:@"object"];
-            if (dataArray.count > 0 && [dataArray isKindOfClass:[NSArray class]]) {
-                //可以加载更多
+            NSMutableArray *modelArray = [NSMutableArray array];
+
+            if ([responeData isKindOfClass:[NSArray class]]) {
+                for (id obj in responeData) {
+                    WFBaseModel *model = [weakSelf modelWithObject:obj];
+                    [modelArray addObject:model];
+                }
+                completionBlock(modelArray);
                 
             } else {
-                //没有加载更多
-                dataArray = @[];
-            }
-            NSMutableArray *modelArray = [NSMutableArray array];
-            for (id obj in dataArray) {
-                WFBaseModel *model = [weakSelf modelWithObject:obj];
+                WFBaseModel *model = [weakSelf modelWithObject:responeData];
                 [modelArray addObject:model];
+                completionBlock(modelArray);
             }
-            completionBlock(modelArray);
+            
         }
-       
         
     } fail:^(NSError * _Nonnull error) {
         failureBlock(error);
     }];
+
 }
 
 - (WFBaseModel *)modelWithObject:(id)object {

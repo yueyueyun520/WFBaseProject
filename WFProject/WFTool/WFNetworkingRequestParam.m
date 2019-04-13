@@ -1,6 +1,6 @@
 //
 //  WFNetworkingRequestParam.m
-//  MCLoginProcess-MCLoginProcess
+//  
 //
 //  Created by efun on 2019/4/4.
 //
@@ -11,10 +11,7 @@
 @end
 @implementation WFNetworkingRequestParam
 static WFNetworkingRequestParam *_instance;
-/**
- 此类需要转化成nsdictionary
- 
- */
+
 + (instancetype)shareInstance {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

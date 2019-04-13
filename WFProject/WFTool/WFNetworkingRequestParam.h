@@ -1,6 +1,6 @@
 //
 //  WFNetworkingRequestParam.h
-//  MCLoginProcess-MCLoginProcess
+//  
 //
 //  Created by efun on 2019/4/4.
 //  参数设置

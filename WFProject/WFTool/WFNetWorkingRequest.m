@@ -25,25 +25,31 @@
 }
 
 - (NSURLSessionTask *)fetchNetWorkingDataWithParam:(WFNetworkingRequestParam *)param susses:(WFNetWorkingRequestSuccesBlock)completionBlock fail:(WFNetWorkingRequestFailBlock)failureBlock{
-    /**
-     1.取消上一次的session
-     2.解析转换param
-     3.请求配置 config 超时设置
-     */
     if (self.session) {
         [self.session cancel];
     }
     
-    NSDictionary *paramDic = [self paramConvertToDicdionary:param];
-    
     NSURLSessionConfiguration *cofig = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc]initWithSessionConfiguration:cofig];
-    NSURLSessionDataTask *sessionTask = [manager GET:param.urlString parameters:paramDic progress:^(NSProgress * _Nonnull downloadProgress) {
-    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        completionBlock(responseObject);
-    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failureBlock(error);
-    }];
+    //需要设置基本配置时调用
+   // NSDictionary *paramDic = [self paramConvertToDicdionary:param];
+    NSURLSessionDataTask *sessionTask = nil;
+    if (param.requestMethod == WFNetworkingRequestMethodGet) {
+        sessionTask = [manager GET:param.urlString parameters:nil progress:^(NSProgress * _Nonnull downloadProgress) {
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            completionBlock(responseObject[@"data"]);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            failureBlock(error);
+        }];
+    } else {
+        sessionTask = [manager POST:param.urlString parameters:nil progress:^(NSProgress * _Nonnull uploadProgress) {
+        } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+            completionBlock(responseObject);
+        } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+            failureBlock(error);
+        }];
+    }
+
     [sessionTask resume];
     
     self.session = sessionTask;

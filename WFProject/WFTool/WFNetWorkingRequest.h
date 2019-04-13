@@ -12,7 +12,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WFNetWorkingRequest : NSObject
-typedef void(^WFNetWorkingRequestSuccesBlock)(NSDictionary *responeData);
+typedef void(^WFNetWorkingRequestSuccesBlock)(id  responeData);
 typedef void(^WFNetWorkingRequestFailBlock)(NSError * _Nonnull error);
 
 
