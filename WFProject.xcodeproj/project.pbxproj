@@ -14,14 +14,18 @@
 		725A8C9D225C821F00FCDBF7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 725A8C9C225C821F00FCDBF7 /* main.m */; };
 		725A8CA7225C821F00FCDBF7 /* WFProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 725A8CA6225C821F00FCDBF7 /* WFProjectTests.m */; };
 		725A8CB2225C822000FCDBF7 /* WFProjectUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 725A8CB1225C822000FCDBF7 /* WFProjectUITests.m */; };
-		72DE7F6C226191DF00C57C6D /* WFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7F64226191DF00C57C6D /* WFBaseModel.m */; };
-		72DE7F6D226191DF00C57C6D /* WFNetWorkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7F66226191DF00C57C6D /* WFNetWorkingRequest.m */; };
-		72DE7F6E226191DF00C57C6D /* WFNetworkingRequestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7F69226191DF00C57C6D /* WFNetworkingRequestParam.m */; };
-		72DE7F6F226191DF00C57C6D /* WFBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7F6B226191DF00C57C6D /* WFBaseViewModel.m */; };
-		72DE7F872261AEB000C57C6D /* WFFirstModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7F802261AEB000C57C6D /* WFFirstModel.m */; };
-		72DE7F882261AEB000C57C6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7F822261AEB000C57C6D /* ViewController.m */; };
-		72DE7F892261AEB000C57C6D /* WFListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7F832261AEB000C57C6D /* WFListModel.m */; };
-		72DE7F8A2261AEB000C57C6D /* WFFirstViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7F852261AEB000C57C6D /* WFFirstViewModel.m */; };
+		72ACEDD822641593007E1D94 /* WFCacheDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ACEDD722641593007E1D94 /* WFCacheDataManager.m */; };
+		72ACEDDA22641902007E1D94 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 72ACEDD922641902007E1D94 /* libsqlite3.0.tbd */; };
+		72ACEDDD22643336007E1D94 /* WFCacheDateResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ACEDDC22643336007E1D94 /* WFCacheDateResultModel.m */; };
+		72DE7FBB2261B33C00C57C6D /* WFNetWorkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FB22261B33C00C57C6D /* WFNetWorkingRequest.m */; };
+		72DE7FBC2261B33C00C57C6D /* WFNetworkingRequestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FB32261B33C00C57C6D /* WFNetworkingRequestParam.m */; };
+		72DE7FBD2261B33C00C57C6D /* WFBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FB72261B33C00C57C6D /* WFBaseViewModel.m */; };
+		72DE7FBE2261B33C00C57C6D /* WFBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FB92261B33C00C57C6D /* WFBaseModel.m */; };
+		72DE7FCB2261B34B00C57C6D /* WFFirstViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FC22261B34B00C57C6D /* WFFirstViewModel.m */; };
+		72DE7FCC2261B34B00C57C6D /* WFFirstModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FC52261B34B00C57C6D /* WFFirstModel.m */; };
+		72DE7FCD2261B34B00C57C6D /* WFListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FC62261B34B00C57C6D /* WFListModel.m */; };
+		72DE7FCE2261B34B00C57C6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FC92261B34B00C57C6D /* ViewController.m */; };
+		72DE7FD12261B3B300C57C6D /* WFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FD02261B3B300C57C6D /* WFTableViewCell.m */; };
 		F4EFC144F420593CF5D1CF90 /* libPods-WFProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D01BF871E17D677FD6E4F1 /* libPods-WFProject.a */; };
 /* End PBXBuildFile section */
 
@@ -58,22 +62,29 @@
 		725A8CAD225C822000FCDBF7 /* WFProjectUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WFProjectUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		725A8CB1225C822000FCDBF7 /* WFProjectUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFProjectUITests.m; sourceTree = "<group>"; };
 		725A8CB3225C822000FCDBF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		72DE7F64226191DF00C57C6D /* WFBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFBaseModel.m; sourceTree = "<group>"; };
-		72DE7F65226191DF00C57C6D /* WFNetworkingRequestParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFNetworkingRequestParam.h; sourceTree = "<group>"; };
-		72DE7F66226191DF00C57C6D /* WFNetWorkingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFNetWorkingRequest.m; sourceTree = "<group>"; };
-		72DE7F67226191DF00C57C6D /* WFBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFBaseViewModel.h; sourceTree = "<group>"; };
-		72DE7F68226191DF00C57C6D /* WFBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFBaseModel.h; sourceTree = "<group>"; };
-		72DE7F69226191DF00C57C6D /* WFNetworkingRequestParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFNetworkingRequestParam.m; sourceTree = "<group>"; };
-		72DE7F6A226191DF00C57C6D /* WFNetWorkingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFNetWorkingRequest.h; sourceTree = "<group>"; };
-		72DE7F6B226191DF00C57C6D /* WFBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFBaseViewModel.m; sourceTree = "<group>"; };
-		72DE7F7F2261AEB000C57C6D /* WFListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFListModel.h; sourceTree = "<group>"; };
-		72DE7F802261AEB000C57C6D /* WFFirstModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFFirstModel.m; sourceTree = "<group>"; };
-		72DE7F812261AEB000C57C6D /* WFFirstViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFFirstViewModel.h; sourceTree = "<group>"; };
-		72DE7F822261AEB000C57C6D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		72DE7F832261AEB000C57C6D /* WFListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFListModel.m; sourceTree = "<group>"; };
-		72DE7F842261AEB000C57C6D /* WFFirstModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFFirstModel.h; sourceTree = "<group>"; };
-		72DE7F852261AEB000C57C6D /* WFFirstViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFFirstViewModel.m; sourceTree = "<group>"; };
-		72DE7F862261AEB000C57C6D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		72ACEDD622641593007E1D94 /* WFCacheDataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFCacheDataManager.h; sourceTree = "<group>"; };
+		72ACEDD722641593007E1D94 /* WFCacheDataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFCacheDataManager.m; sourceTree = "<group>"; };
+		72ACEDD922641902007E1D94 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		72ACEDDB22643336007E1D94 /* WFCacheDateResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFCacheDateResultModel.h; sourceTree = "<group>"; };
+		72ACEDDC22643336007E1D94 /* WFCacheDateResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFCacheDateResultModel.m; sourceTree = "<group>"; };
+		72DE7FB12261B33C00C57C6D /* WFNetworkingRequestParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFNetworkingRequestParam.h; sourceTree = "<group>"; };
+		72DE7FB22261B33C00C57C6D /* WFNetWorkingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFNetWorkingRequest.m; sourceTree = "<group>"; };
+		72DE7FB32261B33C00C57C6D /* WFNetworkingRequestParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFNetworkingRequestParam.m; sourceTree = "<group>"; };
+		72DE7FB42261B33C00C57C6D /* WFNetWorkingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFNetWorkingRequest.h; sourceTree = "<group>"; };
+		72DE7FB62261B33C00C57C6D /* WFBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFBaseViewModel.h; sourceTree = "<group>"; };
+		72DE7FB72261B33C00C57C6D /* WFBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFBaseViewModel.m; sourceTree = "<group>"; };
+		72DE7FB92261B33C00C57C6D /* WFBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFBaseModel.m; sourceTree = "<group>"; };
+		72DE7FBA2261B33C00C57C6D /* WFBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFBaseModel.h; sourceTree = "<group>"; };
+		72DE7FC12261B34B00C57C6D /* WFFirstViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFFirstViewModel.h; sourceTree = "<group>"; };
+		72DE7FC22261B34B00C57C6D /* WFFirstViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFFirstViewModel.m; sourceTree = "<group>"; };
+		72DE7FC42261B34B00C57C6D /* WFListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFListModel.h; sourceTree = "<group>"; };
+		72DE7FC52261B34B00C57C6D /* WFFirstModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFFirstModel.m; sourceTree = "<group>"; };
+		72DE7FC62261B34B00C57C6D /* WFListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFListModel.m; sourceTree = "<group>"; };
+		72DE7FC72261B34B00C57C6D /* WFFirstModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFFirstModel.h; sourceTree = "<group>"; };
+		72DE7FC92261B34B00C57C6D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		72DE7FCA2261B34B00C57C6D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		72DE7FCF2261B3B300C57C6D /* WFTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFTableViewCell.h; sourceTree = "<group>"; };
+		72DE7FD02261B3B300C57C6D /* WFTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFTableViewCell.m; sourceTree = "<group>"; };
 		96D01BF871E17D677FD6E4F1 /* libPods-WFProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WFProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A00DE4C9115F8C9611927D21 /* Pods-WFProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-WFProject/Pods-WFProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72ACEDDA22641902007E1D94 /* libsqlite3.0.tbd in Frameworks */,
 				F4EFC144F420593CF5D1CF90 /* libPods-WFProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -107,6 +119,7 @@
 		3AE09E8A1EE8486020C5BAA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				72ACEDD922641902007E1D94 /* libsqlite3.0.tbd */,
 				96D01BF871E17D677FD6E4F1 /* libPods-WFProject.a */,
 			);
 			name = Frameworks;
@@ -137,8 +150,8 @@
 		725A8C8C225C821E00FCDBF7 /* WFProject */ = {
 			isa = PBXGroup;
 			children = (
-				72DE7F7E2261AEB000C57C6D /* Main */,
-				72DE7F63226191DF00C57C6D /* WFTool */,
+				72DE7FBF2261B34B00C57C6D /* Main */,
+				72DE7FAF2261B33C00C57C6D /* WFTool */,
 				725A8C8D225C821E00FCDBF7 /* AppDelegate.h */,
 				725A8C8E225C821E00FCDBF7 /* AppDelegate.m */,
 				725A8C93225C821E00FCDBF7 /* Main.storyboard */,
@@ -168,34 +181,96 @@
 			path = WFProjectUITests;
 			sourceTree = "<group>";
 		};
-		72DE7F63226191DF00C57C6D /* WFTool */ = {
+		72ACEDD52264156D007E1D94 /* CacheData */ = {
 			isa = PBXGroup;
 			children = (
-				72DE7F64226191DF00C57C6D /* WFBaseModel.m */,
-				72DE7F65226191DF00C57C6D /* WFNetworkingRequestParam.h */,
-				72DE7F66226191DF00C57C6D /* WFNetWorkingRequest.m */,
-				72DE7F67226191DF00C57C6D /* WFBaseViewModel.h */,
-				72DE7F68226191DF00C57C6D /* WFBaseModel.h */,
-				72DE7F69226191DF00C57C6D /* WFNetworkingRequestParam.m */,
-				72DE7F6A226191DF00C57C6D /* WFNetWorkingRequest.h */,
-				72DE7F6B226191DF00C57C6D /* WFBaseViewModel.m */,
+				72ACEDD622641593007E1D94 /* WFCacheDataManager.h */,
+				72ACEDD722641593007E1D94 /* WFCacheDataManager.m */,
+				72ACEDDB22643336007E1D94 /* WFCacheDateResultModel.h */,
+				72ACEDDC22643336007E1D94 /* WFCacheDateResultModel.m */,
+			);
+			path = CacheData;
+			sourceTree = "<group>";
+		};
+		72DE7FAF2261B33C00C57C6D /* WFTool */ = {
+			isa = PBXGroup;
+			children = (
+				72ACEDD52264156D007E1D94 /* CacheData */,
+				72DE7FB02261B33C00C57C6D /* NetWorking */,
+				72DE7FB52261B33C00C57C6D /* BaseViewModel */,
+				72DE7FB82261B33C00C57C6D /* BaseModel */,
 			);
 			path = WFTool;
 			sourceTree = "<group>";
 		};
-		72DE7F7E2261AEB000C57C6D /* Main */ = {
+		72DE7FB02261B33C00C57C6D /* NetWorking */ = {
 			isa = PBXGroup;
 			children = (
-				72DE7F7F2261AEB000C57C6D /* WFListModel.h */,
-				72DE7F802261AEB000C57C6D /* WFFirstModel.m */,
-				72DE7F812261AEB000C57C6D /* WFFirstViewModel.h */,
-				72DE7F822261AEB000C57C6D /* ViewController.m */,
-				72DE7F832261AEB000C57C6D /* WFListModel.m */,
-				72DE7F842261AEB000C57C6D /* WFFirstModel.h */,
-				72DE7F852261AEB000C57C6D /* WFFirstViewModel.m */,
-				72DE7F862261AEB000C57C6D /* ViewController.h */,
+				72DE7FB12261B33C00C57C6D /* WFNetworkingRequestParam.h */,
+				72DE7FB22261B33C00C57C6D /* WFNetWorkingRequest.m */,
+				72DE7FB32261B33C00C57C6D /* WFNetworkingRequestParam.m */,
+				72DE7FB42261B33C00C57C6D /* WFNetWorkingRequest.h */,
+			);
+			path = NetWorking;
+			sourceTree = "<group>";
+		};
+		72DE7FB52261B33C00C57C6D /* BaseViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				72DE7FB62261B33C00C57C6D /* WFBaseViewModel.h */,
+				72DE7FB72261B33C00C57C6D /* WFBaseViewModel.m */,
+			);
+			path = BaseViewModel;
+			sourceTree = "<group>";
+		};
+		72DE7FB82261B33C00C57C6D /* BaseModel */ = {
+			isa = PBXGroup;
+			children = (
+				72DE7FB92261B33C00C57C6D /* WFBaseModel.m */,
+				72DE7FBA2261B33C00C57C6D /* WFBaseModel.h */,
+			);
+			path = BaseModel;
+			sourceTree = "<group>";
+		};
+		72DE7FBF2261B34B00C57C6D /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				72DE7FC02261B34B00C57C6D /* ViewModel */,
+				72DE7FC32261B34B00C57C6D /* Model */,
+				72DE7FC82261B34B00C57C6D /* View */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		72DE7FC02261B34B00C57C6D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				72DE7FC12261B34B00C57C6D /* WFFirstViewModel.h */,
+				72DE7FC22261B34B00C57C6D /* WFFirstViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		72DE7FC32261B34B00C57C6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				72DE7FC42261B34B00C57C6D /* WFListModel.h */,
+				72DE7FC52261B34B00C57C6D /* WFFirstModel.m */,
+				72DE7FC62261B34B00C57C6D /* WFListModel.m */,
+				72DE7FC72261B34B00C57C6D /* WFFirstModel.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		72DE7FC82261B34B00C57C6D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				72DE7FC92261B34B00C57C6D /* ViewController.m */,
+				72DE7FCA2261B34B00C57C6D /* ViewController.h */,
+				72DE7FCF2261B3B300C57C6D /* WFTableViewCell.h */,
+				72DE7FD02261B3B300C57C6D /* WFTableViewCell.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EE7DE15834E84BF2CA4C351C /* Pods */ = {
@@ -386,16 +461,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72DE7FBC2261B33C00C57C6D /* WFNetworkingRequestParam.m in Sources */,
 				725A8C9D225C821F00FCDBF7 /* main.m in Sources */,
-				72DE7F6C226191DF00C57C6D /* WFBaseModel.m in Sources */,
-				72DE7F882261AEB000C57C6D /* ViewController.m in Sources */,
-				72DE7F6D226191DF00C57C6D /* WFNetWorkingRequest.m in Sources */,
+				72DE7FCB2261B34B00C57C6D /* WFFirstViewModel.m in Sources */,
 				725A8C8F225C821E00FCDBF7 /* AppDelegate.m in Sources */,
-				72DE7F6F226191DF00C57C6D /* WFBaseViewModel.m in Sources */,
-				72DE7F6E226191DF00C57C6D /* WFNetworkingRequestParam.m in Sources */,
-				72DE7F892261AEB000C57C6D /* WFListModel.m in Sources */,
-				72DE7F8A2261AEB000C57C6D /* WFFirstViewModel.m in Sources */,
-				72DE7F872261AEB000C57C6D /* WFFirstModel.m in Sources */,
+				72DE7FCE2261B34B00C57C6D /* ViewController.m in Sources */,
+				72ACEDD822641593007E1D94 /* WFCacheDataManager.m in Sources */,
+				72DE7FBD2261B33C00C57C6D /* WFBaseViewModel.m in Sources */,
+				72DE7FBB2261B33C00C57C6D /* WFNetWorkingRequest.m in Sources */,
+				72DE7FBE2261B33C00C57C6D /* WFBaseModel.m in Sources */,
+				72DE7FD12261B3B300C57C6D /* WFTableViewCell.m in Sources */,
+				72ACEDDD22643336007E1D94 /* WFCacheDateResultModel.m in Sources */,
+				72DE7FCD2261B34B00C57C6D /* WFListModel.m in Sources */,
+				72DE7FCC2261B34B00C57C6D /* WFFirstModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
