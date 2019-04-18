@@ -24,7 +24,7 @@
 		72DE7FCB2261B34B00C57C6D /* WFFirstViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FC22261B34B00C57C6D /* WFFirstViewModel.m */; };
 		72DE7FCC2261B34B00C57C6D /* WFFirstModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FC52261B34B00C57C6D /* WFFirstModel.m */; };
 		72DE7FCD2261B34B00C57C6D /* WFListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FC62261B34B00C57C6D /* WFListModel.m */; };
-		72DE7FCE2261B34B00C57C6D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FC92261B34B00C57C6D /* ViewController.m */; };
+		72DE7FCE2261B34B00C57C6D /* WFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FC92261B34B00C57C6D /* WFViewController.m */; };
 		72DE7FD12261B3B300C57C6D /* WFTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FD02261B3B300C57C6D /* WFTableViewCell.m */; };
 		F4EFC144F420593CF5D1CF90 /* libPods-WFProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96D01BF871E17D677FD6E4F1 /* libPods-WFProject.a */; };
 /* End PBXBuildFile section */
@@ -81,8 +81,8 @@
 		72DE7FC52261B34B00C57C6D /* WFFirstModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFFirstModel.m; sourceTree = "<group>"; };
 		72DE7FC62261B34B00C57C6D /* WFListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFListModel.m; sourceTree = "<group>"; };
 		72DE7FC72261B34B00C57C6D /* WFFirstModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFFirstModel.h; sourceTree = "<group>"; };
-		72DE7FC92261B34B00C57C6D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		72DE7FCA2261B34B00C57C6D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		72DE7FC92261B34B00C57C6D /* WFViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFViewController.m; sourceTree = "<group>"; };
+		72DE7FCA2261B34B00C57C6D /* WFViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFViewController.h; sourceTree = "<group>"; };
 		72DE7FCF2261B3B300C57C6D /* WFTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFTableViewCell.h; sourceTree = "<group>"; };
 		72DE7FD02261B3B300C57C6D /* WFTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFTableViewCell.m; sourceTree = "<group>"; };
 		96D01BF871E17D677FD6E4F1 /* libPods-WFProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WFProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -265,8 +265,8 @@
 		72DE7FC82261B34B00C57C6D /* View */ = {
 			isa = PBXGroup;
 			children = (
-				72DE7FC92261B34B00C57C6D /* ViewController.m */,
-				72DE7FCA2261B34B00C57C6D /* ViewController.h */,
+				72DE7FC92261B34B00C57C6D /* WFViewController.m */,
+				72DE7FCA2261B34B00C57C6D /* WFViewController.h */,
 				72DE7FCF2261B3B300C57C6D /* WFTableViewCell.h */,
 				72DE7FD02261B3B300C57C6D /* WFTableViewCell.m */,
 			);
@@ -465,7 +465,7 @@
 				725A8C9D225C821F00FCDBF7 /* main.m in Sources */,
 				72DE7FCB2261B34B00C57C6D /* WFFirstViewModel.m in Sources */,
 				725A8C8F225C821E00FCDBF7 /* AppDelegate.m in Sources */,
-				72DE7FCE2261B34B00C57C6D /* ViewController.m in Sources */,
+				72DE7FCE2261B34B00C57C6D /* WFViewController.m in Sources */,
 				72ACEDD822641593007E1D94 /* WFCacheDataManager.m in Sources */,
 				72DE7FBD2261B33C00C57C6D /* WFBaseViewModel.m in Sources */,
 				72DE7FBB2261B33C00C57C6D /* WFNetWorkingRequest.m in Sources */,

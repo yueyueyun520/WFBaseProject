@@ -7,16 +7,21 @@
 //
 
 #import "AppDelegate.h"
+#import "WFViewController.h"
 
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    WFViewController *VC = [[WFViewController alloc]init];
+    
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setRootViewController:VC];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

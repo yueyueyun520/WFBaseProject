@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  WFViewController.h
 //  WFProject
 //
 //  Created by efun on 2019/4/9.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface WFViewController : UIViewController
 
 
 @end

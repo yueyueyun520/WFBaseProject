@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  WFViewController.m
 //  WFProject
 //
 //  Created by efun on 2019/4/9.
 //  Copyright © 2019 efun. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "WFViewController.h"
 #import "WFFirstViewModel.h"
 #import "WFFirstModel.h"
 #import "WFListModel.h"
 #import "WFTableViewCell.h"
 #import "YYModel.h"
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface WFViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) WFFirstViewModel *viewModel;
 @property (nonatomic, strong) WFFirstModel *model;
 @property (nonatomic, strong) NSArray *listArray;
@@ -21,10 +21,11 @@
 @property (nonatomic, strong) UIButton *saveBtn;
 @end
 
-@implementation ViewController
+@implementation WFViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(40, 50, 80, 40);

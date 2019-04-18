@@ -122,11 +122,11 @@ static WFCacheDataManager *_shareInstance;
     if (![self.dataBase open]) {
         return @[];
     }
-    NSString *sql = [NSString stringWithFormat:@"select ID,json from %@",tableName];
+    NSString *sql = [NSString stringWithFormat:@"select * from %@",tableName];
     FMResultSet *resultSet = [self.dataBase executeQuery:sql];
     NSMutableArray *resultArray = [NSMutableArray array];
     NSMutableArray *dictArray = [NSMutableArray array];
-    if ([resultSet next]) {
+    while ([resultSet next]) {  //没有查询出全部
         WFCacheDateResultModel *model = [[WFCacheDateResultModel alloc]init];
         model.resultId = [resultSet intForColumn:@"ID"];
         model.jasonData = [resultSet dataForColumn:@"json"];
@@ -136,9 +136,9 @@ static WFCacheDataManager *_shareInstance;
         [dictArray addObject:dict];
     }
     if (resultArray.count > mostIndex) { //超过缓存个数删除
-        NSInteger deleteIndex = resultArray.count - mostIndex - 1 ;//6- 5 = 1
+        NSInteger deleteIndex = resultArray.count - mostIndex ;
         if (deleteIndex < resultArray.count) {
-            for (NSInteger i = 0; i <= deleteIndex; i++) {
+            for (NSInteger i = 0; i < deleteIndex; i++) {
                 WFCacheDateResultModel *deleteModel = resultArray[i];
                 //去数据库删除
                 [self deleteFromTabel:tableName id:deleteModel.resultId];
@@ -146,7 +146,6 @@ static WFCacheDataManager *_shareInstance;
                 [dictArray removeObjectAtIndex:i];
             }
         }
-      
     }
     
     [self.dataBase close];
