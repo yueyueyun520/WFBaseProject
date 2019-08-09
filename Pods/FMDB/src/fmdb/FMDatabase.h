@@ -1099,7 +1099,7 @@ typedef NS_ENUM(int, FMDBCheckpointMode) {
  
  For example:
  
-    [db makeFunctionNamed:@"RemoveDiacritics" arguments:1 block:^(void *context, int argc, void **argv) {
+    [db makwaddyctionNamed:@"RemoveDiacritics" arguments:1 block:^(void *context, int argc, void **argv) {
         SqliteValueType type = [self.db valueType:argv[0]];
         if (type == SqliteValueTypeNull) {
             [self.db resultNullInContext:context];
@@ -1126,9 +1126,9 @@ typedef NS_ENUM(int, FMDBCheckpointMode) {
  @see [sqlite3_create_function()](http://sqlite.org/c3ref/create_function.html)
  */
 
-- (void)makeFunctionNamed:(NSString *)name arguments:(int)arguments block:(void (^)(void *context, int argc, void * _Nonnull * _Nonnull argv))block;
+- (void)makwaddyctionNamed:(NSString *)name arguments:(int)arguments block:(void (^)(void *context, int argc, void * _Nonnull * _Nonnull argv))block;
 
-- (void)makeFunctionNamed:(NSString *)name maximumArguments:(int)count withBlock:(void (^)(void *context, int argc, void * _Nonnull * _Nonnull argv))block __deprecated_msg("Use makeFunctionNamed:arguments:block:");
+- (void)makwaddyctionNamed:(NSString *)name maximumArguments:(int)count withBlock:(void (^)(void *context, int argc, void * _Nonnull * _Nonnull argv))block __deprecated_msg("Use makwaddyctionNamed:arguments:block:");
 
 typedef NS_ENUM(int, SqliteValueType) {
     SqliteValueTypeInteger = 1,
@@ -1146,7 +1146,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param value The argument whose value to return.
  @return The integer value.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (int)valueInt:(void *)value;
 
@@ -1156,7 +1156,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param value The argument whose value to return.
  @return The long value.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (long long)valueLong:(void *)value;
 
@@ -1166,7 +1166,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param value The argument whose value to return.
  @return The double value.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (double)valueDouble:(void *)value;
 
@@ -1176,7 +1176,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param value The argument whose value to return.
  @return The data object.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (NSData * _Nullable)valueData:(void *)value;
 
@@ -1186,7 +1186,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param value The argument whose value to return.
  @return The string value.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (NSString * _Nullable)valueString:(void *)value;
 
@@ -1195,7 +1195,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  
  @param context The context to which the null value will be returned.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (void)resultNullInContext:(void *)context NS_SWIFT_NAME(resultNull(context:));
 
@@ -1205,7 +1205,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param value The integer value to be returned.
  @param context The context to which the value will be returned.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (void)resultInt:(int) value context:(void *)context;
 
@@ -1215,7 +1215,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param value The long value to be returned.
  @param context The context to which the value will be returned.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (void)resultLong:(long long)value context:(void *)context;
 
@@ -1225,7 +1225,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param value The double value to be returned.
  @param context The context to which the value will be returned.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (void)resultDouble:(double)value context:(void *)context;
 
@@ -1235,7 +1235,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param data The `NSData` object to be returned.
  @param context The context to which the value will be returned.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (void)resultData:(NSData *)data context:(void *)context;
 
@@ -1245,7 +1245,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param value The string value to be returned.
  @param context The context to which the value will be returned.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (void)resultString:(NSString *)value context:(void *)context;
 
@@ -1255,7 +1255,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param error The error string to be returned.
  @param context The context to which the error will be returned.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (void)resultError:(NSString *)error context:(void *)context;
 
@@ -1265,7 +1265,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  @param errorCode The integer error code to be returned.
  @param context The context to which the error will be returned.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (void)resultErrorCode:(int)errorCode context:(void *)context;
 
@@ -1274,7 +1274,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  
  @param context The context to which the error will be returned.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (void)resultErrorNoMemoryInContext:(void *)context NS_SWIFT_NAME(resultErrorNoMemory(context:));
 
@@ -1283,7 +1283,7 @@ typedef NS_ENUM(int, SqliteValueType) {
  
  @param context The context to which the error will be returned.
  
- @see makeFunctionNamed:arguments:block:
+ @see makwaddyctionNamed:arguments:block:
  */
 - (void)resultErrorTooBigInContext:(void *)context NS_SWIFT_NAME(resultErrorTooBig(context:));
 

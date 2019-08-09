@@ -2,8 +2,8 @@
 //  WFViewController.m
 //  WFProject
 //
-//  Created by efun on 2019/4/9.
-//  Copyright © 2019 efun. All rights reserved.
+//  Created by waddy on 2019/4/9.
+//  Copyright © 2019 waddy. All rights reserved.
 //
 
 #import "WFViewController.h"
@@ -12,6 +12,10 @@
 #import "WFListModel.h"
 #import "WFTableViewCell.h"
 #import "YYModel.h"
+#import "WFAlgorithmClass.h"
+
+
+
 @interface WFViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) WFFirstViewModel *viewModel;
 @property (nonatomic, strong) WFFirstModel *model;
@@ -49,6 +53,26 @@
     [self.saveBtn addTarget:self action:@selector(savebuttonClick) forControlEvents:UIControlEventTouchUpInside];
     
     [self.view addSubview:self.tableView];
+    
+    //字符串反转
+    char cha[] = "hello-waddy";
+    char *reault = [WFAlgorithmClass reverseWithString:cha];
+    NSLog(@"反转后：%s",reault);
+    
+    //有序数组合并
+    NSArray *arr1 = @[@"1",@"3",@"4",@"7",@"9",@"21"];
+    NSArray *arr2 = @[@"3",@"3",@"4",@"12",@"16",@"21",@"78",@"90"];
+    NSMutableArray *results = [WFAlgorithmClass orderedArrayMergingWithArrayA:arr1 arrayB:arr2];
+    NSLog(@"合并后：%@",results);
+    
+    //在字符串中找到第一个只出现一次的字符
+    char str[] = "hsbaswhhhdds";
+    char re = [WFAlgorithmClass firstAppearOnce:str];
+    NSLog(@"第一个出现：%c",re);
+    
+    
+    
+    if (WFAnother) {} //another target
     
 }
 

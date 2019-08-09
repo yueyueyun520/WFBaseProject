@@ -2,7 +2,7 @@
 //  WFBaseModel.h
 //  AFNetworking
 //
-//  Created by efun on 2019/4/9.
+//  Created by waddy on 2019/4/9.
 //  model要继承于此基类
 
 #import <Foundation/Foundation.h>

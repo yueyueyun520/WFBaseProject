@@ -2,8 +2,8 @@
 //  AppDelegate.h
 //  WFProject
 //
-//  Created by efun on 2019/4/9.
-//  Copyright © 2019 efun. All rights reserved.
+//  Created by waddy on 2019/4/9.
+//  Copyright © 2019 waddy. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

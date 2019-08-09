@@ -2,8 +2,8 @@
 //  WFFirstViewModel.h
 //  WFProject
 //
-//  Created by efun on 2019/4/10.
-//  Copyright © 2019 efun. All rights reserved.
+//  Created by waddy on 2019/4/10.
+//  Copyright © 2019 waddy. All rights reserved.
 //
 
 #import "WFBaseViewModel.h"

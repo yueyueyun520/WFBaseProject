@@ -24,3 +24,12 @@ pod 'AFNetworking'
 #pod 'AMapLocation-NO-IDFA'
 #pod 'AMap2DMap-NO-IDFA'
 end
+
+target 'WFProjectAnother' do
+ pod 'SDWebImage'
+ pod 'Masonry'
+ pod 'IQKeyboardManager'
+ pod 'FMDB'
+ pod 'YYModel'
+ pod 'AFNetworking'
+end
