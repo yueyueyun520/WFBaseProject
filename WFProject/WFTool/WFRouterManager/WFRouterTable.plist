@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>10000</key>
+	<dict>
+		<key>name</key>
+		<string>WFBaseViewController</string>
+		<key>discription</key>
+		<string>基类</string>
+	</dict>
+	<key>10001</key>
+	<dict>
+		<key>name</key>
+		<string>WFFirstViewController</string>
+		<key>discription</key>
+		<string>通用view</string>
+	</dict>
+</dict>
+</plist>

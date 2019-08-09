@@ -19,6 +19,11 @@
 		72ACEDD822641593007E1D94 /* WFCacheDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ACEDD722641593007E1D94 /* WFCacheDataManager.m */; };
 		72ACEDDA22641902007E1D94 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 72ACEDD922641902007E1D94 /* libsqlite3.0.tbd */; };
 		72ACEDDD22643336007E1D94 /* WFCacheDateResultModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72ACEDDC22643336007E1D94 /* WFCacheDateResultModel.m */; };
+		72BEADB922FD53540093607E /* WFRouterTable.plist in Resources */ = {isa = PBXBuildFile; fileRef = 72BEADAF22FD53540093607E /* WFRouterTable.plist */; };
+		72BEADBA22FD53540093607E /* WFBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEADB122FD53540093607E /* WFBaseViewController.m */; };
+		72BEADBB22FD53540093607E /* WFRouterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEADB322FD53540093607E /* WFRouterManager.m */; };
+		72BEADBC22FD53540093607E /* WFRouterNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEADB422FD53540093607E /* WFRouterNavigationController.m */; };
+		72BEADBD22FD53540093607E /* WFRouterModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72BEADB522FD53540093607E /* WFRouterModel.m */; };
 		72DE7FBB2261B33C00C57C6D /* WFNetWorkingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FB22261B33C00C57C6D /* WFNetWorkingRequest.m */; };
 		72DE7FBC2261B33C00C57C6D /* WFNetworkingRequestParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FB32261B33C00C57C6D /* WFNetworkingRequestParam.m */; };
 		72DE7FBD2261B33C00C57C6D /* WFBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 72DE7FB72261B33C00C57C6D /* WFBaseViewModel.m */; };
@@ -91,6 +96,15 @@
 		72ACEDD922641902007E1D94 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
 		72ACEDDB22643336007E1D94 /* WFCacheDateResultModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WFCacheDateResultModel.h; sourceTree = "<group>"; };
 		72ACEDDC22643336007E1D94 /* WFCacheDateResultModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WFCacheDateResultModel.m; sourceTree = "<group>"; };
+		72BEADAF22FD53540093607E /* WFRouterTable.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WFRouterTable.plist; sourceTree = "<group>"; };
+		72BEADB122FD53540093607E /* WFBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFBaseViewController.m; sourceTree = "<group>"; };
+		72BEADB222FD53540093607E /* WFBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFBaseViewController.h; sourceTree = "<group>"; };
+		72BEADB322FD53540093607E /* WFRouterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFRouterManager.m; sourceTree = "<group>"; };
+		72BEADB422FD53540093607E /* WFRouterNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFRouterNavigationController.m; sourceTree = "<group>"; };
+		72BEADB522FD53540093607E /* WFRouterModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFRouterModel.m; sourceTree = "<group>"; };
+		72BEADB622FD53540093607E /* WFRouterModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFRouterModel.h; sourceTree = "<group>"; };
+		72BEADB722FD53540093607E /* WFRouterNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFRouterNavigationController.h; sourceTree = "<group>"; };
+		72BEADB822FD53540093607E /* WFRouterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFRouterManager.h; sourceTree = "<group>"; };
 		72DE7FB12261B33C00C57C6D /* WFNetworkingRequestParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WFNetworkingRequestParam.h; sourceTree = "<group>"; };
 		72DE7FB22261B33C00C57C6D /* WFNetWorkingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFNetWorkingRequest.m; sourceTree = "<group>"; };
 		72DE7FB32261B33C00C57C6D /* WFNetworkingRequestParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WFNetworkingRequestParam.m; sourceTree = "<group>"; };
@@ -241,9 +255,34 @@
 			path = CacheData;
 			sourceTree = "<group>";
 		};
+		72BEADAE22FD53540093607E /* WFRouterManager */ = {
+			isa = PBXGroup;
+			children = (
+				72BEADAF22FD53540093607E /* WFRouterTable.plist */,
+				72BEADB022FD53540093607E /* BaseView */,
+				72BEADB322FD53540093607E /* WFRouterManager.m */,
+				72BEADB422FD53540093607E /* WFRouterNavigationController.m */,
+				72BEADB522FD53540093607E /* WFRouterModel.m */,
+				72BEADB622FD53540093607E /* WFRouterModel.h */,
+				72BEADB722FD53540093607E /* WFRouterNavigationController.h */,
+				72BEADB822FD53540093607E /* WFRouterManager.h */,
+			);
+			path = WFRouterManager;
+			sourceTree = "<group>";
+		};
+		72BEADB022FD53540093607E /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				72BEADB122FD53540093607E /* WFBaseViewController.m */,
+				72BEADB222FD53540093607E /* WFBaseViewController.h */,
+			);
+			path = BaseView;
+			sourceTree = "<group>";
+		};
 		72DE7FAF2261B33C00C57C6D /* WFTool */ = {
 			isa = PBXGroup;
 			children = (
+				72BEADAE22FD53540093607E /* WFRouterManager */,
 				72A34A1922FC0DBC0041A8DA /* AlgorithmClass */,
 				72ACEDD52264156D007E1D94 /* CacheData */,
 				72DE7FB02261B33C00C57C6D /* NetWorking */,
@@ -462,6 +501,7 @@
 				725A8C9A225C821F00FCDBF7 /* LaunchScreen.storyboard in Resources */,
 				725A8C97225C821F00FCDBF7 /* Assets.xcassets in Resources */,
 				725A8C95225C821E00FCDBF7 /* Main.storyboard in Resources */,
+				72BEADB922FD53540093607E /* WFRouterTable.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -589,10 +629,14 @@
 			files = (
 				72DE7FBC2261B33C00C57C6D /* WFNetworkingRequestParam.m in Sources */,
 				725A8C9D225C821F00FCDBF7 /* main.m in Sources */,
+				72BEADBA22FD53540093607E /* WFBaseViewController.m in Sources */,
 				72DE7FCB2261B34B00C57C6D /* WFFirstViewModel.m in Sources */,
 				725A8C8F225C821E00FCDBF7 /* AppDelegate.m in Sources */,
+				72BEADBB22FD53540093607E /* WFRouterManager.m in Sources */,
 				72DE7FCE2261B34B00C57C6D /* WFViewController.m in Sources */,
+				72BEADBC22FD53540093607E /* WFRouterNavigationController.m in Sources */,
 				72ACEDD822641593007E1D94 /* WFCacheDataManager.m in Sources */,
+				72BEADBD22FD53540093607E /* WFRouterModel.m in Sources */,
 				72DE7FBD2261B33C00C57C6D /* WFBaseViewModel.m in Sources */,
 				72DE7FBB2261B33C00C57C6D /* WFNetWorkingRequest.m in Sources */,
 				72DE7FBE2261B33C00C57C6D /* WFBaseModel.m in Sources */,
